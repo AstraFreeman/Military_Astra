@@ -1,6 +1,8 @@
 <html>
 	<head>
-	<script src="aframe/aframe.min.js"></script>
+	<!--<script src="aframe/aframe.min.js"></script>-->
+	<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>	
+	<script src="https://unpkg.com/aframe-stl-model-component/dist/aframe-stl-model-component.min.js"></script>
 	</head>
 	<body>
 		<a-scene>
@@ -11,7 +13,7 @@
 			<a-plane position="-1.5 1 -3" rotation="0 0 0" width="1" height="2" color="white" src="boy.png" animation="property: position; to: 3 1 -3; dur: 3000; easing: linear; loop: true></a-plane>
 			<a-plane position="-3 1 -3" rotation="0 0 0" width="1" height="2" color="white" src="padre.jpg" animation="property: position; to: 3 1 -3; dur: 4000; easing: linear; loop: true></a-plane>
 			<a-plane position="-4.5 1 -3" rotation="0 0 0" width="1" height="2" color="white" src="pol.jpg" animation="property: position; to: 3 1 -3; dur: 5000; easing: linear; loop: true></a-plane>
-						<a-sky color="#00BFFF"></a-sky>
+			<a-sky color="#00BFFF"></a-sky>
 			<a-text value="Військова історія" font="ADVENTURE.TTF-msdf.json" position="-1.5 1 -2" rotation="0 45 0" color="#33C3F0"negate="false"></a-text>
 		</a-scene>
 	</body>
