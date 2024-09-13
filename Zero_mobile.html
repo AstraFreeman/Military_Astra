@@ -1,0 +1,68 @@
+<html>
+	<head>
+	
+	<script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>	
+	
+	</head>
+	<body>
+		<a-scene>
+		      <a-assets>
+			<a-asset-item id="greese_3" src="greese_3.glb"></a-asset-item>
+			<img id="sqif_1" src="sqif_1.jpg"></img>
+			<img id="goth_1" src="goth_1.jpg"></img>
+			<img id="avar" src="avar.jpg"></img>
+			<img id="greese_13" src="greese_13.jpg"></img>
+			<img id="hun" src="hun.jpg"></img>
+			<img id="tuirk" src="tuirk.jpg"></img>
+			<img id="russ_1" src="russ_1.jpg"></img>
+			<img id="russ_2" src="russ_2.jpg"></img>
+			<img id="kossack_NLW_1" src="kossack_NLW_1.png"></img>
+			<img id="kossack_NLW_2" src="kossack_NLW_2.png"></img>
+			<img id="kossack_fin_2" src="kossack_fin_2.png"></img>
+			<img id="kossack_fin_1" src="kossack_fin_1.png"></img>
+			<img id="UR_1917_1" src="UR_1917_1.png"></img>
+			<img id="UR_1917_1" src="UR_1918_2.png"></img>
+			<img id="text_1" src="text_1.png"></img>
+			   </a-assets>
+			<a-gltf-model src="#greese_3" position="6 0 1" rotation="0 -45 0" scale="1 1 1"></a-gltf-model> 
+			<a-entity camera look-controls wasd-controls="acceleration:25" position="0 1.3 4"></a-entity>
+			 				
+			<a-box position="-1 1 -3" rotation="0 135 0" color="white "depth="2" height="2" width="0.1"></a-box>
+			<a-cylinder position="1 0.75 -3" radius="0.05" height="1.5" color="blue"></a-cylinder>
+			<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="grey"></a-plane>
+			<a-plane position="0 0 6" rotation="-90 90 90" width="1.5" height="16" color="red"></a-plane>
+			
+				<a-light color="red" position="0 1.5 -5 rotation="0 90 0"></a-light>
+				<a-light type="point" color="white" position="0 0 7" target="#hun"></a-light>
+					<a-box position="0 1 -9"color="white"  depth="2" height="2" width="2" src="#text_1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-box>
+					
+			<a-entity  id = "sugar_slowed"  geometry = "primitive: plane"  material = "color: blue" position = "0 -1 4" sound = "src: url(sugar_slowed.mp3); autoplay: true"> </a-entity>
+			<a-box position="-1 1 5"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="-1 1 5" rotation="0 90 0" width="1.5" height="2" color="white" src="#sqif_1"></a-plane>
+				<a-plane position="-1 1 5" rotation="0 90 0" width="1.5" height="2" color="white" src="#hun"></a-plane>
+			<a-box position="-1 1 6"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="-1 1 6" rotation="0 90 0" width="1.5" height="2" color="white" src="#tuirk"></a-plane>
+			<a-box position="0 1 1"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="0 1 1.1" rotation="0 90 0" width="1.5" height="2" color="white" src="#russ_1"></a-plane>
+			<a-box position="-1.72 1 1.75"color="FBEC5D" rotation="0 135 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="-1.56 1 1.85" rotation="0 45 0" width="1.5" height="2" color="white" src="#kossack_NLW_1"></a-plane>
+			<a-box position="-2.2 1 2"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+			<!-- <a-plane material="transparent:true" position="0 1 -3" rotation="0 0 0" width="1" height="2" color="white" src="#Husk_1_1"></a-plane> -->
+			<a-box position="1 1 5"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="1 1 5" rotation="0 -90 0" width="1.5" height="2" color="white" src="#greese_13"></a-plane>
+			<a-box position="1 1 6"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="1 1 6" rotation="0 -90 0" width="1.5" height="2" color="white" src="#goth_1"></a-plane>
+			<a-box position="1.7 1 5.1"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="1.63 1 4.9" rotation="0 -135 0" width="1.5" height="2" color="white" src="#avar"></a-plane>
+			<a-box position="2.4 1 3.4"color="FBEC5D" rotation="0 0 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="2.24 1 3.4" rotation="0 -90 0" width="1" height="2" color="white" src="#russ_2"></a-plane>
+			<a-box position="1.62 1 1.73"color="FBEC5D" rotation="0 45 0" depth="2" height="3" width="0.3"></a-box>
+				<a-plane position="1.59 1 1/94" rotation="0 -45 0" width="1.5" height="1" color="white" src="#kossack_NLW_2"></a-plane>
+			<a-sky color="#00BFFF"></a-sky>
+					<a-text value="7 епох" font="ADVENTURE.TTF-msdf.json" position="-1.15 0.9 -2.3" rotation="0 45 0" color="black" negate="false"></a-text>			
+					<a-text value="Військова історія" font="ADVENTURE.TTF-msdf.json" position="-1.5 1.35 -2.2" rotation="0 45 0" color="#33C3F0" negate="false"></a-text>
+			
+			<a-torus position="0 1 -5" color="gold" arc="300" radius="3" radius-tubular="0.3" animation="property: rotation; to: 0 0 360; loop: true; dur: 10000"></a-torus-knot>
+		</a-scene>
+	</body>
+</html>
